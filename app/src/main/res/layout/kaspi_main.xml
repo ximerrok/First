@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#303136"
+    tools:context=".KaspiActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+        <ImageView
+            android:id="@+id/close"
+            android:src="@drawable/close"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginStart="15dp"
+            />
+        <ImageView
+            android:id="@+id/restart"
+            android:src="@drawable/restart"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/ava_kaspi"
+            android:src="@drawable/ava_kaspi"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            />
+
+
+        <TextView
+            android:id="@+id/username"
+            android:text="Пользователь"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/ava_kaspi"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/relative_1"
+        >
+        <TextView
+            android:id="@+id/qat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Код быстрого доступа"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/b_code"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:maxLength="4"
+            android:hint="****"
+            android:textColor="@color/white"
+            android:inputType="numberPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/qat"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_inviz"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_kaspi"
+            android:fontFamily="@font/poppins_bold"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/_1"
+            android:background="@drawable/button_kaspi"
+            android:textSize="24sp"
+            app:srcCompat="@drawable/back" />
+
+    </LinearLayout>
+
+</LinearLayout>
